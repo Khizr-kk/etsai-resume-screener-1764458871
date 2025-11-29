@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkillMatch AI - Elevate Your Tech Career</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Basic Reset & Body Styling */
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f8f8f8;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        /* Container for responsiveness */
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Header Styling */
+        header {
+            background-color: #003366; /* Deep Blue */
+            color: #ffffff;
+            padding: 15px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 1.8em;
+            font-weight: 700;
+        }
+
+        /* Hero Section */
+        .hero {
+            background-color: #004080; /* Slightly lighter blue */
+            color: #ffffff;
+            text-align: center;
+            padding: 80px 20px;
+            border-radius: 0 0 15px 15px; /* Soft bottom corners */
+        }
+
+        .hero h1 {
+            font-size: 3em;
+            margin-bottom: 15px;
+            font-weight: 700;
+            line-height: 1.2;
+        }
+
+        .hero p {
+            font-size: 1.2em;
+            max-width: 700px;
+            margin: 0 auto 30px auto;
+            opacity: 0.9;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background-color: #FFD700; /* Gold */
+            color: #003366;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 1.1em;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .cta-button:hover {
+            background-color: #E6C200; /* Darker Gold */
+            transform: translateY(-2px);
+        }
+
+        /* Section Styling */
+        .section {
+            padding: 60px 0;
+            text-align: center;
+        }
+
+        .section:nth-of-type(even) {
+            background-color: #f0f4f7; /* Light grey blue */
+        }
+
+        .section h2 {
+            font-size: 2.2em;
+            color: #003366;
+            margin-bottom: 40px;
+            font-weight: 700;
+        }
+
+        /* Features Section */
+        .features-list {
+            list-style: none;
+            padding: 0;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            text-align: left;
+            margin-top: 40px;
+        }
+
+        .features-list li {
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+            position: relative;
+            padding-left: 70px; /* Space for icon */
+            min-height: 100px;
+            display: flex;
+            align-items: center;
+            font-size: 1.1em;
+            color: #555;
+            line-height: 1.5;
+            transition: transform 0.3s ease;
+        }
+
+        .features-list li::before {
+            content: '✓'; /* Simple checkmark */
+            position: absolute;
+            left: 25px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 2em;
+            color: #008080; /* Teal for accent */
+            font-weight: bold;
+        }
+        
+        .features-list li:hover {
+            transform: translateY(-5px);
+        }
+
+        /* Pricing Section */
+        .pricing-teaser p {
+            font-size: 1.1em;
+            max-width: 600px;
+            margin: 20px auto 0 auto;
+            color: #555;
+        }
+
+        /* Footer Styling */
+        footer {
+            background-color: #003366;
+            color: #ffffff;
+            text-align: center;
+            padding: 30px 20px;
+            font-size: 0.9em;
+            margin-top: 50px;
+        }
+
+        footer a {
+            color: #FFD700;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Media Queries for smaller screens */
+        @media (max-width: 768px) {
+            .hero {
+                padding: 60px 20px;
+            }
+
+            .hero h1 {
+                font-size: 2.5em;
+            }
+
+            .hero p {
+                font-size: 1em;
+            }
+
+            .cta-button {
+                padding: 12px 25px;
+                font-size: 1em;
+            }
+
+            .section h2 {
+                font-size: 1.8em;
+                margin-bottom: 30px;
+            }
+            
+            .features-list li {
+                padding: 20px;
+                padding-left: 60px;
+                min-height: 80px;
+                font-size: 1em;
+            }
+
+            .features-list li::before {
+                left: 20px;
+                font-size: 1.8em;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero h1 {
+                font-size: 2em;
+            }
+            .features-list {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>SkillMatch AI</h1>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>Unlock Your Potential: AI-Powered Resume Analysis for Indian Freshers</h1>
+            <p>Struggling with job applications? SkillMatch AI provides deep insights into your resume's alignment with job descriptions, highlighting what you need to succeed.</p>
+            <a href="#features" class="cta-button">Get Started Now</a>
+        </div>
+    </section>
+
+    <section id="features" class="section">
+        <div class="container">
+            <h2>How SkillMatch AI Empowers Your Job Search</h2>
+            <ul class="features-list">
+                <li>
+                    AI-Powered Compatibility Score: Get an instant, objective score showing how well your resume matches any job description.
+                </li>
+                <li>
+                    Identify Missing Skills: Pinpoint the exact skills from the job description that are absent in your resume, guiding your learning.
+                </li>
+                <li>
+                    Highlight Matching Strengths: Clearly see which of your existing skills align perfectly with the job's requirements.
+                </li>
+                <li>
+                    Effortless Uploads: Easily upload your resume (PDF/DOCX) and paste or upload job descriptions for quick analysis.
+                </li>
+                <li>
+                    Personalized Dashboard: Track your progress, review past analyses, and see trends in your skill development over time.
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="section pricing-teaser">
+        <div class="container">
+            <h2>Simple & Transparent Pricing</h2>
+            <p>We believe in empowering every fresher. Start your journey with our generous free tier, offering essential analysis features. Upgrade to our premium plans for unlimited analyses, advanced insights, and priority support as you grow your career.</p>
+            <a href="#" class="cta-button">View Plans</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 SkillMatch AI. All rights reserved.</p>
+            <p>Contact us: <a href="mailto:info@skillmatchai.com">info@skillmatchai.com</a></p>
+        </div>
+    </footer>
+</body>
+</html>
